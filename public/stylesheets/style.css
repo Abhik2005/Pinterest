@@ -1,0 +1,13 @@
+p strong:hover{
+  text-decoration: underline;
+}
+
+*::selection{
+  color: rgb(255, 255, 28);
+  background-color: rgb(213, 111, 111);
+}
+
+.div{
+  padding: 10px 15px;
+  border-radius: 20px;
+}

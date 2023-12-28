@@ -1,0 +1,39 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-100 flex items-center justify-center">
+  <div class="w-[30vw] h-[85vh] bg-zinc-100 px-10 py-10 rounded-[30px] flex items-center justify-center shadow-2xl flex-col font-sans">
+    <img class="w-[35px] h-[35px]" src="https://imgs.search.brave.com/i9ag50hyfjQQllm3pEMYQR_vM1LTMzy6Cmrw4GKnURA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvcGlu/dGVyZXN0LTEtbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n" alt="">
+    <h1 class="text-3xl font-semibold mb-4">Welcome to pinterest</h1>
+    <p class="mb-2 text-red-700" id="error"><%= error %></p>
+    <form class="flex flex-col" action="/login" method="post">
+      <label class="mb-1" for="email">Email</label>
+      <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px] mb-2" id="email" type="email" name="username" placeholder="Email">
+      <label class="mb-1" for="password">Password</label>
+      <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px]" id="password" type="password" name="password" placeholder="Password">
+      <i class="ri-eye-fill absolute top-[41.2%] left-[57.5%] text-sm cursor-pointer eye" id="eye"></i>
+        <i class="ri-eye-off-fill absolute top-[41.2%] left-[57.5%] text-sm cursor-pointer hidden eye" id="eye-off"></i>
+      <a class="text-sm font-semibold mb-6" href="/password/reset">Forgot your password ?</a>
+      <button class="bg-red-600 rounded-[25px] py-3 text-sm font-bold text-zinc-100 mb-2" type="submit">Log in</button>
+    </form>
+    <h2 class="text-sm font-semibold mb-2">OR</h2>
+   <div class="bg-blue-600 rounded-[25px] py-1 pr-[50px] pl-[10px] text-xl/2 font-bold text-zinc-100 mb-2 flex items-center">
+    <a href="#">
+      <i class="ri-facebook-circle-fill text-zinc-100 text-2xl pr-[10px]"></i>
+      <span>Continue with facebook</span>
+    </a>
+   </div>
+    <div class="bg-zinc-100 rounded-[25px] py-1 pr-[70px] pl-[10px] text-xl/2 font-semibold text-zinc-900 mb-2 flex items-center border border-zinc-300">
+      <a href="/auth/google">
+        <i class="ri-google-fill  text-2xl  pr-[10px] inline-bock text-transparent bg-clip-text bg-gradient-to-r via-red-500 bg-yellow-500 bg-green-500 bg-blue-500"></i>
+        <span>Continue with google</span>
+      </a>
+    </div>
+    <p class="text-xs/[10px] px-[50px] text-center leading-4 text-gray-500 pb-2">
+      By continuing, you agree to Pinterest's <br><strong class="text-zinc-900"> <a href="#">Terms of Service</a></strong>
+      and acknowledge you've read our <br> <strong class="text-zinc-900"><a href="#"> Privacy Policy.</strong><strong class="text-zinc-900"> Notice at collection</a></strong>
+    </p>
+    <span class=" line w-[120px] h-[1px] bg-zinc-300 mb-2"></span>
+    <a class="text-xs px-[50px] text-center font-bold text-zinc-700 mb-3" href="/register">Not on Pinterest yet? Sign up</a>
+    <span class="text-xs/[10px] px-[50px] text-center text-zinc-600">Are you a business? <a class="font-semibold text-zinc-800" href="#">Get started here!</a></span>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>

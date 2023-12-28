@@ -1,0 +1,22 @@
+<% include header.ejs %>
+<div class="nav-bar flex items-center justify-between px-8 mt-4 font-semibold text-zinc-800">
+    <div><a href="#"><img class="w-[25px] h-[25px]" src="https://imgs.search.brave.com/i9ag50hyfjQQllm3pEMYQR_vM1LTMzy6Cmrw4GKnURA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvcGlu/dGVyZXN0LTEtbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n" alt=""></a></div>
+    <div class="div"><a href="#">Home</a></div>
+    <div class="div"><a href="#">Explore</a></div>
+    <div class="div"><a href="/pin-creation-tool">Create</a></div>
+    <div class="flex items-center justify-center w-[65vw] h-[50px] bg-zinc-200 rounded-full relative">
+        <div class="left-search ">
+            <i class="ri-search-line absolute top-[50%] left-[20px] translate-y-[-50%] text-xl text-zinc-600 font-semibold"></i> <input type="search" name="" id="" placeholder="Search your Pins" class="bg-zinc-200 w-[55vw] h-[50px] rounded-full pl-12">
+        </div>
+        <span class="w-[2px] h-[30px] inline-block bg-zinc-100"></span>
+        <div class="right-search w-[10vw] h-[50px] flex items-center justify-center bg-zinc-200 rounded-full cursor-pointer">
+            <span>Your Pins</span>
+            <i class="ri-arrow-down-s-line text-2xl text-zinc-900 mt-1"></i>
+        </div>
+    </div>
+    <div><i class="ri-notification-2-fill text-2xl text-zinc-600"></i></div>
+    <div><i class="ri-message-2-fill text-2xl text-zinc-600"></i></div>
+    <a href="/profile"><div class="account flex items-center justify-center w-[35px] h-[35px] bg-stone-500 rounded-[50%] flex items-center justify-center"><div class="w-[35px] h-[35px] bg-<%= color %>-500 rounded-full flex items-center justify-center"><span class="text-xs font-semibold text-white"><%= accountLogo %></span></div></div></a>
+    <div><i class="ri-arrow-down-s-line text-2xl text-zinc-600"></i></div>
+</div>
+<% include footer.ejs %>

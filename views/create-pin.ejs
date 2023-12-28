@@ -1,0 +1,26 @@
+<% include ./partials/header.ejs %>
+<% include ./partials/nav-bar.ejs %>
+<div class="main w-full h-[auto] border-t border-zinc-200 mt-5 flex ">
+    <div class="left-div w-[6vw] border-r border-zinc-300 h-[90vh]">
+        <div class="forwardIcon w-[6vw] h-[80px] flex items-center justify-center"><i class="ri-arrow-right-double-line text-4xl text-zinc-900 font-semibold cursor-pointer"></i></div>
+        <div class="addIcon w-[6vw] h-[80px] flex items-center justify-center border-b border-zinc-300"><i class="ri-add-line text-4xl text-zinc-900 font-semibold cursor-pointer"></i></div>
+    </div>
+    <div class="right-div w-[94vw]  h-[90vh]">
+        <div class="top h-[12vh] border-b border-zinc-300 flex items-center px-5 font-semibold text-xl text-zinc-700">
+            Create Pin
+        </div>
+        <div class="bottom flex w-[100%] h-[78vh]">
+            <div class="left w-[45%] h-[100%] flex items-center justify-center flex-col">
+                <div class="fileUpload w-[20vw] h-[55vh] rounded-[20px] bg-zinc-300 mb-4">
+                    <i class="ri-arrow-up-circle-fill"></i>
+                </div>
+                <span class="inline-block w-[20vw] h-[1px] bg-zinc-300 mb-4"></span>
+                <a href="#"><button type="button" class="w-[20vw] h-[50px] rounded-[50px] bg-zinc-300 font-semibold">Save from URL</button></a>
+            </div>
+            <div class="right w-[55%] h-[100%] ">
+                o
+            </div>
+        </div>
+    </div>
+</div>
+<% include ./partials/footer.ejs %>

@@ -1,0 +1,44 @@
+<% include ./partials/header.ejs %>
+<div class="w-full h-screen bg-zinc-100 flex items-center justify-center">
+    <div class="w-[30vw] h-[auto] bg-zinc-100 px-10 py-10 rounded-[30px] flex items-center justify-center shadow-2xl flex-col font-sans overflow-hidden relative">
+      <img class="w-[35px] h-[35px]" src="https://imgs.search.brave.com/i9ag50hyfjQQllm3pEMYQR_vM1LTMzy6Cmrw4GKnURA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZnJlZWJpZXN1cHBs/eS5jb20vbG9nb3Mv/bGFyZ2UvMngvcGlu/dGVyZXN0LTEtbG9n/by1wbmctdHJhbnNw/YXJlbnQucG5n" alt="">
+      <h1 class="text-3xl font-semibold mb-2">Welcome to pinterest</h1>
+      <h3 class="mb-3">Find new ideas to try</h3>
+      <form class="flex flex-col" action="/register" method="post">
+        <label class="mb-1" for="fullname">Full Name</label>
+        <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px] mb-1" id="fullname" type="text" name="fullname" placeholder="Full Name">
+        <label class="mb-1" for="email">Email</label>
+        <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px] mb-1" id="email" type="email" name="username" placeholder="Email">
+        <label class="mb-1" for="password">Password</label>
+        <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px] mb-1 " id="password" type="password" name="password" placeholder="Create Password">
+        <i class="ri-eye-fill absolute top-[43.6%] left-[75%] text-sm cursor-pointer" id="eye"></i>
+        <i class="ri-eye-off-fill absolute top-[43.6%] left-[75%] text-sm cursor-pointer hidden" id="eye-off"></i>
+        <label class="mb-1" for="DOB">Birthdate <i class="icon-div ri-information-fill text-xl/[15px] text-zinc-500 relative"></i> <div class="hidden-div absolute left-[40%] top-[35%] w-[200px] h-[auto] bg-zinc-700 text-zinc-100 rounded-[10px] px-2 py-2 text-xs hidden">To help keep Pinterest safe, we now require your birthdate. Your birthdate also helps us provide more personalized recommendations and relevant ads. We don't share this information and it won't be visible on your profile.
+        </div> </label>
+        <input class="w-[280px] px-5 py-3 border-2 border-zinc-300 rounded-[10px] mb-4" type="date" name="dob" id="DOB">
+        <button class="bg-red-600 rounded-[25px] py-3 text-sm font-bold text-zinc-100 mb-2" type="submit">Continue</button>
+      </form>
+      <h2 class="text-sm font-semibold mb-2">OR</h2>
+     <div class="bg-blue-600 rounded-[25px] py-1 pr-[50px] pl-[10px] text-xl/2 font-bold text-zinc-100 mb-2 flex items-center">
+      <a href="#">
+        <i class="ri-facebook-circle-fill text-zinc-100 text-2xl pr-[10px]"></i>
+        <span>Continue with facebook</span>
+      </a>
+     </div>
+      <div class="bg-zinc-100 rounded-[25px] py-1 pr-[70px] pl-[10px] text-xl/2 font-semibold text-zinc-900 mb-4 flex items-center border border-zinc-300">
+        <a href="#">
+          <i class="ri-google-fill  text-2xl  pr-[10px] inline-bock text-transparent bg-clip-text bg-gradient-to-r via-red-500 bg-yellow-500 bg-green-500 bg-blue-500"></i>
+          <span>Continue with google</span>
+        </a>
+      </div>
+      <p class="text-xs/[10px] px-[50px] text-center leading-4 text-gray-500 pb-2">
+        By continuing, you agree to Pinterest's <br><strong class="text-zinc-900"> <a href="#">Terms of Service</a></strong>
+        and acknowledge you've read our <br> <strong class="text-zinc-900"><a href="#"> Privacy Policy.</strong><strong class="text-zinc-900"> Notice at collection</a></strong>
+      </p>
+      <a class="text-xs px-[50px] text-center font-bold text-zinc-700 mb-8 mt-2" href="/">Already a member? Log in</a>
+      <div class="w-[30vw] py-[25px] bg-zinc-300 flex items-center justify-center absolute bottom-0">
+        <span class="text-sm/[10px] px-[10px] text-center text-zinc-900"><a class=" tracking-tight font-medium" href="#">Create a free business account</a></span>
+      </div>
+    </div>
+  </div>
+<% include ./partials/footer.ejs %>
